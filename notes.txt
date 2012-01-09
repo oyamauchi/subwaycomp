@@ -1,0 +1,68 @@
+
+Tokyo: Tokyo Metro, Toei
+  Relations: 443269 443272 443279 443281 443282 443284 443259 443286
+  Missing Tozai (?!), Namboku, Fukutoshin, Asakusa (?!?!) and Oedo lines
+  Colors are meh
+  Shinjuku line is total baloney: an isolated bit off to the east, nothing through center
+  Hibiya line craps out early on the north end
+  Random chunk of Mita line on top of Marunouchi around Otemachi
+
+
+Paris: RATP
+  All lines, including OrlyVAL
+  Relations: 123564 123652 123674 123737 123767 123768 123775 123782 123784 123789 123792 123799 123802 123912 123914 123917 274173
+  Not spot-checked
+
+
+London: Transport for London
+  All lines
+  Relations: 102762 102767 102768 102769 102770 102771 102773 102782 102783 102787 102788 309383
+  Circle line is completely covered except Kensington, but it's there
+  Northern line extended past Mill Hill East?
+  Victoria line depot apparently included
+  Colors don't seem totally authentic
+  Not fully spot-checked
+
+
+New York: (network tag) NYC Subway
+  All lines (services, actually)
+  Relations: 364630 366763 366764 366765 366766 366767 366768 366769 366770 366772 366773 366774 366775 366776 366777 366778 366779 366780 366781 366782 366783 366784 366785 366808 366809
+  Colors are a magical rainbow, not totally authentic
+  Not spot-checked
+
+
+Chicago: Chicago Transit Authority
+  All lines
+  Relations: 92653 120717 122020 122552 124354 252441 443970 443974
+  Colors are kind of wonky
+  Red/purple concurrency is iffy
+
+
+Washington: Washington Metropolitan Area Transit Authority
+  Relations: 192836 270832 400284 918503
+  Missing Green line (?!)
+  Blue line is randomly missing a chunk around Arlington
+  Red line has a little doubling around Gallaudet
+  Yellow line gets cut off at Fort Totten
+  Colors are unofficial
+
+
+Seoul: appears to be completely missing?
+
+
+Brussels: STIB/MIVB
+   All lines
+   Relations: 58240 58241 58242 108101
+   No colors, so I made some up
+   All okay, except for small gap at Simonis
+
+
+San Francisco: BART, San Francisco Municipal Railway
+  BART has all lines
+  Relations: 415948 444672 444673 444675 444676
+  SFO-Millbrae wye is missing (yellow to SFO, rest to Millbrae)
+  Otherwise fine
+
+  Muni not loaded yet
+  Muni is missing L Taraval?
+  T Third doesn't have an operator. Look under nextbus:agency="sf-muni"

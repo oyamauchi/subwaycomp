@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title>Subways</title>
+</head>
+<body bgcolor="#bbbbbb" onload="fetchDataAndUpdateDisplay($('system-selector'))">
+
+<h1 align="center">Subway Diagrams, To Scale</h1>
+
+<div align="center">
+  <p>
+    <form>
+      100 pixels is:
+      <select id="scale-selector" onchange="updateDisplay()">
+        <option value="3">3km</option>
+        <option value="5">5km</option>
+        <option value="10">10km</option>
+        <option value="15">15km</option>
+      </select>
+      &nbsp;&nbsp;
+      System:
+      <select id="system-selector" onchange="fetchDataAndUpdateDisplay(this)">
+        <optgroup label="Asia">
+          <option value="tokyo">Tokyo (Tokyo Metro + Toei)</option>
+        </optgroup>
+        <optgroup label="North America">
+          <option value="newyork">New York City (NYC Subway)</option>
+          <option value="chicago">Chicago (CTA)</option>
+          <option value="washington">Washington DC (WMATA)</option>
+          <option value="sfbart">San Francisco Bay Area (BART)</option>
+        </optgroup>
+        <optgroup label="Europe">
+          <option value="paris">Paris (RATP)</option>
+          <option value="london">London (TfL)</option>
+          <option value="brussels">Brussels (STIB/MIVB)</option>
+        </optgroup>
+      </select>
+      &nbsp;&nbsp;
+      Background is:
+      <select id="bg-selector" onchange="updateDisplay()">
+        <option value="#eeeeee">light</option>
+        <option value="#222222">dark</option>
+      </select>
+      &nbsp;&nbsp;
+      <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
+      <label for="color-checkbox">Color lines</label>
+    </form>
+  </p>
+
+  <canvas id="diagram" width="800" height="800">
+  </canvas>
+</div>
+
+</body>
+<script type="text/javascript" src="draw.js"></script>
+</html>
