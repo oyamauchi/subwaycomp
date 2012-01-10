@@ -10,8 +10,9 @@ Tokyo: Tokyo Metro, Toei
 
 
 Paris: RATP
-  All lines, including OrlyVAL
-  Relations: 123564 123652 123674 123737 123767 123768 123775 123782 123784 123789 123792 123799 123802 123912 123914 123917 274173
+  All lines. Data includes Orlyval; I removed it.
+  Relations: 123564 123652 123674 123737 123767 123768 123775 123782 123784 123789 123792 123799 123802 123912 123914 123917
+  Orlyval: 274173
   Not spot-checked
 
 
@@ -46,7 +47,7 @@ Washington: Washington Metropolitan Area Transit Authority
   Relations: 192836 270832 400284 918503
   Missing Green line (?!)
   Blue line is randomly missing a chunk around Arlington
-  Red line has a little doubling around Gallaudet
+  Red line has a little doubling around Gallaudet (this is real; it's a depot)
   Yellow line gets cut off at Fort Totten
   Colors are unofficial
 

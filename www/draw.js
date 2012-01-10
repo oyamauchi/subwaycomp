@@ -27,20 +27,11 @@ function hereItIs(text, xmax, ymax) {
 function paint() {
     var context = $('diagram').getContext('2d');
 
-    // Wipe
-    context.clearRect(0, 0, context.canvas.width, context.canvas.height);
-    context.fillStyle = $('bg-selector').value;
-    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
-
     if (!window.lastFetchedData) {
         return;
     }
+
     var lines = window.lastFetchedData.obj;
-
-    // Set color 'n stuff
-    context.lineCap = 'round';
-    context.lineWidth = 3.0;
-
     var xmax = window.lastFetchedData.xmax;
     var ymax = window.lastFetchedData.ymax;
 
@@ -49,15 +40,25 @@ function paint() {
     // How many pixels wide/tall the diagram is, given the selected scale
     var xspan = (xmax / hundredpixels) * 100;
     var yspan = (ymax / hundredpixels) * 100;
+    var sidepadding = 25;
+    context.canvas.width = Math.max(xspan + 2 * sidepadding, 800);
+    context.canvas.height = Math.max(yspan + 2 * sidepadding, 600);
 
-    // The distances between the left/top edges of the diagram and canvas. May
-    // be negative if the diagram is too big for the canvas.
     var xoff = (context.canvas.width - xspan) / 2;
     var yoff = (context.canvas.height - yspan) / 2;
 
     // Functions to convert the meter-offset data into pixel coordinates
     var xconv = function (pt) { return (pt[0] / xmax) * xspan + xoff; };
     var yconv = function (pt) { return (pt[1] / ymax) * yspan + yoff; };
+
+    // Clean slate
+    context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+    context.fillStyle = $('bg-selector').value;
+    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
+
+    // Line style settings
+    context.lineCap = 'round';
+    context.lineWidth = 3.0;
 
     // Aight let'z go
     for (var lineIndex = 0; lineIndex < lines.length; lineIndex++) {
