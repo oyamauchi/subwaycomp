@@ -4,8 +4,9 @@ Tokyo: Tokyo Metro, Toei
   Missing Tozai (?!), Namboku, Fukutoshin, Asakusa (?!?!) and Oedo lines
   Colors are meh
   Shinjuku line is total baloney: an isolated bit off to the east, nothing through center
-  Hibiya line craps out early on the north end
+  Hibiya line craps out early on the north end, between Minowa and Minami-Senju
   Random chunk of Mita line on top of Marunouchi around Otemachi
+  Mita line craps out early on north (should go farther north than Yurakucho line). Between Itabashi-Honcho and Itabashi-Kuyakushomae, it seems
 
 
 Paris: RATP
@@ -28,7 +29,10 @@ New York: (network tag) NYC Subway
   All lines (services, actually)
   Relations: 364630 366763 366764 366765 366766 366767 366768 366769 366770 366772 366773 366774 366775 366776 366777 366778 366779 366780 366781 366782 366783 366784 366785 366808 366809
   Colors are a magical rainbow, not totally authentic
-  Not spot-checked
+  Lower Manhattan is busted; the lines don't join up
+  2 and 3 train through Clark Street Tunnel totally missing
+  A, C, E missing a big chunk
+  Not fully spot-checked
 
 
 Chicago: Chicago Transit Authority
