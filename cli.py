@@ -15,6 +15,8 @@ if sys.argv[1] == "rbo":
     query = osmapi.queries.relations_by_operator(sys.argv[2])
 elif sys.argv[1] == "rbn":
     query = osmapi.queries.relations_by_node(sys.argv[2])
+elif sys.argv[1] == "rbr":
+    query = osmapi.queries.nodes_and_ways_by_relation(sys.argv[2])
 elif sys.argv[1] == "nwbr":
     relations = []
     r = random.Random()

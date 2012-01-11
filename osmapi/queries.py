@@ -24,7 +24,7 @@ def relations_by_operator(operator_name, route_type="subway"):
 <query type="relation">
   <has-kv k="type" v="route" />
   <has-kv k="route" v="%s" />
-  <has-kv k="network" v="%s" />
+  <has-kv k="operator" v="%s" />
 </query>
 <print />""" % (route_type, operator_name)
 

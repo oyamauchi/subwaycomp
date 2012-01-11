@@ -43,12 +43,13 @@ Chicago: Chicago Transit Authority
   Red/purple concurrency is iffy
 
 
-Washington: Washington Metropolitan Area Transit Authority
+Washington: Washington Metropolitan Area Transit Authority, Washington Metro Area Transit Authority
+  First operator has all lines except Green
   Relations: 192836 270832 400284 918503
-  Missing Green line (?!)
+  Relation for Green: 918504
+  Green line is gone south of L'Enfant, except for a random chunk around Naylor
   Blue line is randomly missing a chunk around Arlington
   Red line has a little doubling around Gallaudet (this is real; it's a depot)
-  Yellow line gets cut off at Fort Totten
   Colors are unofficial
 
 
