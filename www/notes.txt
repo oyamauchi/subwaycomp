@@ -1,7 +1,11 @@
 
-Tokyo: Tokyo Metro, Toei
-  Relations: 443269 443272 443279 443281 443282 443284 443259 443286
-  Missing Tozai (?!), Namboku, Fukutoshin, Asakusa (?!?!) and Oedo lines
+Tokyo: Tokyo Metro, To-kyo- Metoro (hyphens are overbars), Toei
+  Tokyo Metro has all lines except Tozai, Namboku, Fukutoshin
+  Relations: 443269 443272 443279 443281 443282 443284
+  To-kyo- Metoro has Tozai
+  Relation: 443260
+  Toei is missing Asakusa (?!?!), Oedo
+  Relations: 443259 443286
   Colors are meh
   Shinjuku line is total baloney: an isolated bit off to the east, nothing through center
   Hibiya line craps out early on the north end, between Minowa and Minami-Senju
