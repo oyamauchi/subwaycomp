@@ -59,6 +59,6 @@ def rectangularize(structs):
                 y = (maxlat - lat) * latdeglength
                 if x > xmax: xmax = x
                 if y > ymax: ymax = y
-                piece[index] = (x, y)
+                piece[index] = (int(round(x)), int(round(y)))
 
     return (xmax, ymax)
