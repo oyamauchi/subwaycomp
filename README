@@ -1,0 +1,20 @@
+
+This is a webpage that shows diagrams of subway systems, to scale.
+
+I use it to satisfy my nerdly desires to intuitively understand the relative
+sizes and densities of different systems.
+
+Eventually I might add things to it, such as features.
+
+There are two main parts: one in Python that fetches data from OpenStreetMap,
+performs trigonometry thereupon and writes it into files, and another in
+Javascript that actually draws the map.
+
+There is no server-side scripting involved here. The data fetching/processing is
+done offline, and all the JS does is fetch a static file and draw stuff. You can
+use it as a local file in your browser.
+
+There are some notes in a file called notes.txt, wherein I complain about data
+quality in hilarious fashion.
+
+It uses the canvas tag, which is how you know that I am hip with the times.
