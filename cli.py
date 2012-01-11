@@ -30,7 +30,8 @@ elif sys.argv[1] == "nwbr":
 
     structs = [rel.jsonable_form() for rel in relations]
     xmax, ymax = geo.rectangularize(structs)
-    print "hereItIs(%s, %s, %s)" % (json.dumps(structs), str(xmax), str(ymax))
+    print "hereItIs(%s, %s, %s)" % (json.dumps(structs, separators=(',',':')),
+                                    str(xmax), str(ymax))
     exit(0)
 
 else:
