@@ -3,6 +3,45 @@ function $(name) {
     return document.getElementById(name);
 }
 
+function draggingMouseDown(e) {
+    var elt = e.target;
+    if (elt.id != 'diagram') {
+        return;
+    }
+
+    window.startX = parseInt(elt.style.left);
+    window.startY = parseInt(elt.style.top);
+    if (!window.startX) {
+        window.startX = 0;
+    }
+    if (!window.startY) {
+        window.startY = 0;
+    }
+    window.mouseX = e.clientX;
+    window.mouseY = e.clientY;
+    window.dragElt = elt;
+
+    document.onmousemove = draggingMouseMove;
+}
+function draggingMouseMove(e) {
+    var elt = window.dragElt;
+    if (!elt) {
+        return;
+    }
+    elt.style.left = (window.startX + (e.clientX - window.mouseX)) + 'px';
+    elt.style.top  = (window.startY + (e.clientY - window.mouseY)) + 'px';
+}
+function draggingMouseUp(e) {
+    window.dragElt = null;
+    document.onmousemove = null;
+}
+
+function loaded() {
+    fetchDataAndUpdateDisplay($('system-selector'));
+    document.onmousedown = draggingMouseDown;
+    document.onmouseup = draggingMouseUp;
+}
+
 function fetchDataAndUpdateDisplay(selector) {
     // Launch the request for the data. This is JSONP, purely because I'm a lazy
     // bum and I want something that works locally too
@@ -38,11 +77,11 @@ function paint() {
     var hundredpixels = $('scale-selector').value * 1000;
 
     // How many pixels wide/tall the diagram is, given the selected scale
-    var xspan = (xmax / hundredpixels) * 100;
-    var yspan = (ymax / hundredpixels) * 100;
+    var xspan = Math.round(xmax / hundredpixels) * 97;
+    var yspan = Math.round(ymax / hundredpixels) * 100;
     var sidepadding = 25;
-    context.canvas.width = Math.max(xspan + 2 * sidepadding, 800);
-    context.canvas.height = Math.max(yspan + 2 * sidepadding, 600);
+    context.canvas.width = xspan + 2 * sidepadding;
+    context.canvas.height = yspan + 2 * sidepadding;
 
     var xoff = (context.canvas.width - xspan) / 2;
     var yoff = (context.canvas.height - yspan) / 2;
@@ -53,8 +92,6 @@ function paint() {
 
     // Clean slate
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
-    context.fillStyle = $('bg-selector').value;
-    context.fillRect(0, 0, context.canvas.width, context.canvas.height);
 
     // Line style settings
     context.lineCap = 'round';
@@ -73,7 +110,6 @@ function paint() {
             var points = pieces[ii];
             var xs = points.map(xconv);
             var ys = points.map(yconv);
-            console.log(xs);
             context.beginPath();
             context.moveTo(xs[0], ys[0]);
 

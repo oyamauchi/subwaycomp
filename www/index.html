@@ -2,13 +2,14 @@
 <html>
 <head>
   <title>Subways</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
-<body bgcolor="#bbbbbb" onload="fetchDataAndUpdateDisplay($('system-selector'))">
+<body onload="loaded()">
 
 <h1 align="center">Subway Diagrams, To Scale</h1>
 
 <div align="center">
-  <p>
+  <div id="controls">
     <form>
       100 pixels is:
       <select id="scale-selector" onchange="updateDisplay()">
@@ -36,18 +37,12 @@
         </optgroup>
       </select>
       &nbsp;&nbsp;
-      Background is:
-      <select id="bg-selector" onchange="updateDisplay()">
-        <option value="#eeeeee">light</option>
-        <option value="#222222">dark</option>
-      </select>
-      &nbsp;&nbsp;
       <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
       <label for="color-checkbox">Color lines</label>
     </form>
-  </p>
+  </div>
 
-  <canvas id="diagram" width="800" height="800">
+  <canvas id="diagram" style="position: absolute">
   </canvas>
 
   <p>
