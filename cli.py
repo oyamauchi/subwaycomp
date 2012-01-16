@@ -31,9 +31,13 @@ elif sys.argv[1] == "nwbr":
         relations.append(relation)
 
     structs = [rel.jsonable_form() for rel in relations]
-    xmax, ymax = geo.rectangularize(structs)
-    print "hereItIs(%s, %s, %s)" % (json.dumps(structs, separators=(',',':')),
-                                    str(xmax), str(ymax))
+    centerlat, centerlon = geo.center(structs)
+    xmin, ymin, xmax, ymax = geo.mercatorize(structs)
+    jsondump = json.dumps(structs, separators=(',',':'))
+    print """hereItIs(%s,
+%d, %d,
+%d, %d,
+%s, %s)""" % (jsondump, xmin, ymin, xmax, ymax, str(centerlat), str(centerlon))
     exit(0)
 
 else:

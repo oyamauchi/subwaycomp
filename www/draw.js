@@ -56,10 +56,14 @@ function updateDisplay() {
 }
 
 // The JSONP callback for the choose-a-system selector
-function hereItIs(text, xmax, ymax) {
+function hereItIs(text, xmin, ymin, xmax, ymax, centerlat, centerlon) {
     window.lastFetchedData = {'obj' : text,
+                              'xmin' : xmin,
+                              'ymin' : ymin,
                               'xmax' : xmax,
-                              'ymax' : ymax};
+                              'ymax' : ymax,
+                              'centerlat' : centerlat,
+                              'centerlon' : centerlon};
     paint();
 }
 
@@ -71,24 +75,23 @@ function paint() {
     }
 
     var lines = window.lastFetchedData.obj;
+    var xmin = window.lastFetchedData.xmin;
+    var ymin = window.lastFetchedData.ymin;
     var xmax = window.lastFetchedData.xmax;
     var ymax = window.lastFetchedData.ymax;
 
-    var hundredpixels = $('scale-selector').value * 1000;
+    // Google Maps zoom level x is our "zoom level" x-16.
+    var gzoomlevel = 14;
+    var zoomfactor = Math.pow(2, gzoomlevel - 16);
 
-    // How many pixels wide/tall the diagram is, given the selected scale
-    var xspan = Math.round(xmax / hundredpixels) * 97;
-    var yspan = Math.round(ymax / hundredpixels) * 100;
-    var sidepadding = 25;
-    context.canvas.width = xspan + 2 * sidepadding;
-    context.canvas.height = yspan + 2 * sidepadding;
-
-    var xoff = (context.canvas.width - xspan) / 2;
-    var yoff = (context.canvas.height - yspan) / 2;
+    var xspan = xmax - xmin;
+    var yspan = ymax - ymin;
+    context.canvas.width = zoomfactor * xspan;
+    context.canvas.height = zoomfactor * yspan;
 
     // Functions to convert the meter-offset data into pixel coordinates
-    var xconv = function (pt) { return (pt[0] / xmax) * xspan + xoff; };
-    var yconv = function (pt) { return (pt[1] / ymax) * yspan + yoff; };
+    var xconv = function (pt) { return (pt[0] - xmin) * zoomfactor; };
+    var yconv = function (pt) { return (pt[1] - ymin) * zoomfactor; };
 
     // Clean slate
     context.clearRect(0, 0, context.canvas.width, context.canvas.height);
@@ -119,5 +122,17 @@ function paint() {
             context.stroke();
         }
     }
+
+    // Draw the Gmap
+    var centerlat = window.lastFetchedData.centerlat;
+    var centerlon = window.lastFetchedData.centerlon;
+    var imgsrc = 'http://maps.googleapis.com/maps/api/staticmap?center=';
+    imgsrc += centerlat + ',' + centerlon;
+    imgsrc += '&zoom=' + gzoomlevel + '&sensor=false&size=640x640';
+    $('gmap').src = imgsrc;
+
+    // Center the canvas on the gmap
+    context.canvas.style.left = $('gmap').style.left;
+    context.canvas.style.top  = $('gmap').style.top;
 }
 
