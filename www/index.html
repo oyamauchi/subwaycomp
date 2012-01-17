@@ -27,7 +27,7 @@
               </optgroup>
               <optgroup label="Europe">
                 <option value="paris">Paris Metro</option>
-                <option value="london">London Uderground</option>
+                <option value="london">London Underground</option>
                 <option value="brussels">Brussels Metro</option>
               </optgroup>
             </select>
@@ -46,18 +46,24 @@
           <td>
             <select id="map-selector" onchange="updateMap()">
               <optgroup label="Asia">
+                <option value="Beijing, China">Beijing</option>
+                <option value="Seoul, South Korea">Seoul</option>
+                <option value="Shanghai, China">Shanghai</option>
                 <option value="Chiyoda, Tokyo, Japan">Tokyo</option>
               </optgroup>
               <optgroup label="North America">
-                <option value="New York, NY">New York City</option>
                 <option value="Chicago, IL">Chicago</option>
-                <option value="Washington DC">Washington DC</option>
+                <option value="New York, NY">New York City</option>
                 <option value="San Francisco, CA">San Francisco</option>
+                <option value="Washington DC">Washington DC</option>
               </optgroup>
               <optgroup label="Europe">
-                <option value="Paris, France">Paris</option>
-                <option value="London, UK">London</option>
+                <option value="Berlin, Germany">Berlin</option>
                 <option value="Brussels, Belgium">Brussels</option>
+                <option value="London, UK">London</option>
+                <option value="Madrid, Spain">Madrid</option>
+                <option value="Moscow, Russia">Moscow</option>
+                <option value="Paris, France">Paris</option>
               </optgroup>
             </select>
           </td>
@@ -65,7 +71,7 @@
             Zoom:
           </td>
           <td>
-            <input id="scale-slider" type="range" min="10" max="14" onchange="updateDisplay()" />
+            <input id="scale-slider" type="range" min="10" max="14" onchange="updateScale()" />
           </td>
         </tr>
       </table>

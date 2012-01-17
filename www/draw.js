@@ -52,6 +52,11 @@ function fetchDataAndUpdateDisplay(selector) {
     document.getElementsByTagName('head')[0].appendChild(fetcher);
 }
 
+function updateScale() {
+    updateMap();
+    paint();
+}
+
 function updateDisplay() {
     paint();
 }
