@@ -38,6 +38,7 @@ function draggingMouseUp(e) {
 
 function loaded() {
     fetchDataAndUpdateDisplay($('system-selector'));
+    updateMap();
     document.onmousedown = draggingMouseDown;
     document.onmouseup = draggingMouseUp;
 }
@@ -61,10 +62,16 @@ function hereItIs(text, xmin, ymin, xmax, ymax, centerlat, centerlon) {
                               'xmin' : xmin,
                               'ymin' : ymin,
                               'xmax' : xmax,
-                              'ymax' : ymax,
-                              'centerlat' : centerlat,
-                              'centerlon' : centerlon};
+                              'ymax' : ymax};
     paint();
+}
+
+function updateMap() {
+    var zoom = $('scale-slider').value;
+    var imgsrc = 'http://maps.googleapis.com/maps/api/staticmap?center=';
+    imgsrc += encodeURIComponent($('map-selector').value);
+    imgsrc += '&zoom=' + zoom + '&sensor=false&size=640x640';
+    $('gmap').src = imgsrc;
 }
 
 function paint() {
@@ -81,13 +88,15 @@ function paint() {
     var ymax = window.lastFetchedData.ymax;
 
     // Google Maps zoom level x is our "zoom level" x-16.
-    var gzoomlevel = 14;
+    var gzoomlevel = $('scale-slider').value;
     var zoomfactor = Math.pow(2, gzoomlevel - 16);
 
     var xspan = xmax - xmin;
     var yspan = ymax - ymin;
     context.canvas.width = zoomfactor * xspan;
     context.canvas.height = zoomfactor * yspan;
+    context.canvas.style.left = '0px';
+    context.canvas.style.top = '0px';
 
     // Functions to convert the meter-offset data into pixel coordinates
     var xconv = function (pt) { return (pt[0] - xmin) * zoomfactor; };
@@ -122,17 +131,5 @@ function paint() {
             context.stroke();
         }
     }
-
-    // Draw the Gmap
-    var centerlat = window.lastFetchedData.centerlat;
-    var centerlon = window.lastFetchedData.centerlon;
-    var imgsrc = 'http://maps.googleapis.com/maps/api/staticmap?center=';
-    imgsrc += centerlat + ',' + centerlon;
-    imgsrc += '&zoom=' + gzoomlevel + '&sensor=false&size=640x640';
-    $('gmap').src = imgsrc;
-
-    // Center the canvas on the gmap
-    context.canvas.style.left = $('gmap').style.left;
-    context.canvas.style.top  = $('gmap').style.top;
 }
 

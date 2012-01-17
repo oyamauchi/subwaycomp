@@ -11,34 +11,64 @@
 <div align="center">
   <div id="controls">
     <form>
-      100 pixels is:
-      <select id="scale-selector" onchange="updateDisplay()">
-        <option value="1.5">1.5km</option>
-        <option value="3" selected>3km</option>
-        <option value="5">5km</option>
-        <option value="10">10km</option>
-      </select>
-      &nbsp;&nbsp;
-      System:
-      <select id="system-selector" onchange="fetchDataAndUpdateDisplay(this)">
-        <optgroup label="Asia">
-          <option value="tokyo">Tokyo (Tokyo Metro + Toei)</option>
-        </optgroup>
-        <optgroup label="North America">
-          <option value="newyork">New York City (NYC Subway)</option>
-          <option value="chicago">Chicago (CTA)</option>
-          <option value="washington">Washington DC (WMATA)</option>
-          <option value="sfbart">San Francisco Bay Area (BART)</option>
-        </optgroup>
-        <optgroup label="Europe">
-          <option value="paris">Paris (RATP)</option>
-          <option value="london">London (TfL)</option>
-          <option value="brussels">Brussels (STIB/MIVB)</option>
-        </optgroup>
-      </select>
-      &nbsp;&nbsp;
-      <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
-      <label for="color-checkbox">Color lines</label>
+      <table border="0">
+        <tr>
+          <td>System:</td>
+          <td>
+            <select id="system-selector" onchange="fetchDataAndUpdateDisplay(this)">
+              <optgroup label="Asia">
+                <option value="tokyo">Tokyo Metro + Toei (Tokyo)</option>
+              </optgroup>
+              <optgroup label="North America">
+                <option value="newyork">New York City Subway</option>
+                <option value="chicago">Chicago 'L'</option>
+                <option value="washington">Washington DC Metro</option>
+                <option value="sfbart">BART (San Francisco Bay Area)</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="paris">Paris Metro</option>
+                <option value="london">London Uderground</option>
+                <option value="brussels">Brussels Metro</option>
+              </optgroup>
+            </select>
+          </td>
+          <td align="right">
+            <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
+          </td>
+          <td>
+            <label for="color-checkbox">Color lines</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            City:
+          </td>
+          <td>
+            <select id="map-selector" onchange="updateMap()">
+              <optgroup label="Asia">
+                <option value="Chiyoda, Tokyo, Japan">Tokyo</option>
+              </optgroup>
+              <optgroup label="North America">
+                <option value="New York, NY">New York City</option>
+                <option value="Chicago, IL">Chicago</option>
+                <option value="Washington DC">Washington DC</option>
+                <option value="San Francisco, CA">San Francisco</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="Paris, France">Paris</option>
+                <option value="London, UK">London</option>
+                <option value="Brussels, Belgium">Brussels</option>
+              </optgroup>
+            </select>
+          </td>
+          <td>
+            Zoom:
+          </td>
+          <td>
+            <input id="scale-slider" type="range" min="10" max="14" onchange="updateDisplay()" />
+          </td>
+        </tr>
+      </table>
     </form>
   </div>
 
