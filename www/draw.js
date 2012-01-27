@@ -28,8 +28,12 @@ function draggingMouseMove(e) {
     if (!elt) {
         return;
     }
-    elt.style.left = (window.startX + (e.clientX - window.mouseX)) + 'px';
-    elt.style.top  = (window.startY + (e.clientY - window.mouseY)) + 'px';
+
+    var left = (window.startX + (e.clientX - window.mouseX));
+    var top  = (window.startY + (e.clientY - window.mouseY));
+
+    elt.style.left = left + 'px';
+    elt.style.top  = top + 'px';
 }
 function draggingMouseUp(e) {
     window.dragElt = null;
@@ -100,8 +104,8 @@ function paint() {
     var yspan = ymax - ymin;
     context.canvas.width = zoomfactor * xspan;
     context.canvas.height = zoomfactor * yspan;
-    context.canvas.style.left = '0px';
-    context.canvas.style.top = '0px';
+    context.canvas.style.left = $('gmap').offsetLeft + 'px';
+    context.canvas.style.top = $('gmap').offsetTop + 'px';
 
     // Functions to convert the meter-offset data into pixel coordinates
     var xconv = function (pt) { return (pt[0] - xmin) * zoomfactor; };

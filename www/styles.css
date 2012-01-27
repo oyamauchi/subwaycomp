@@ -1,17 +1,94 @@
 
 body {
-    background-color: #bbbbbb;
+    background-color: #ccc;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+    margin: 0px;
+}
+
+a:link, a:visited {
+    color: #3245c0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#column-container {
+    padding-left: 227px;
+}
+
+#column-container .column {
+    position: relative;
+    float: left;
+}
+
+#map-and-canvas {
+    background-color: #bbb;
+
+    width: 100%;
+    text-align: center;
+}
+
+#gmap {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#diagram {
+    position: absolute;
+}
+
+#aux-bar {
+    background-color: #ccc;
+
+    padding-left: 7px;
+
+    margin-left: -100%;
+    right: 227px;
+    width: 220px;
+}
+
+#title {
+    color: #272727;
+    font-size: 24px;
+    font-weight: bold;
+    width: 220px;
+
+    padding: 3px 0 0 0;
 }
 
 #controls {
-    width: 640px;
-
-    background-color: #bbbbbb;
-    border: #aaaaaa 1px solid;
-
-    position: relative;
-    z-index: 1;
-
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#links {
+    background-color: #bbb;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin-right: 7px;
+    padding: 3px 0 4px 3px;
+
+    font-size: 12px;
+}
+
+.control-title {
+    font-weight: bold;
+    color: #333333;
+    text-shadow: #ddd 1px 1px 0;
+    padding-bottom: 4px;
+}
+
+.control-surround {
+    background-color: #bbb;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #ddd;
+
+    padding: 3px 0px 4px 3px;
+    margin-bottom: 1em;
 }

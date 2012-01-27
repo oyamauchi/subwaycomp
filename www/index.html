@@ -6,92 +6,95 @@
 </head>
 <body onload="loaded()">
 
-<h1 align="center">Subway Diagrams, To Scale</h1>
+<div id="column-container">
 
-<div align="center">
-  <div id="controls">
-    <form>
-      <table border="0">
-        <tr>
-          <td>System:</td>
-          <td>
-            <select id="system-selector" onchange="fetchDataAndUpdateDisplay(this)">
-              <optgroup label="Asia">
-                <option value="tokyo" selected>Tokyo Metro + Toei (Tokyo)</option>
-              </optgroup>
-              <optgroup label="North America">
-                <option value="newyork">New York City Subway</option>
-                <option value="chicago">Chicago 'L'</option>
-                <option value="washington">Washington DC Metro</option>
-                <option value="sfbart">BART (San Francisco Bay Area)</option>
-              </optgroup>
-              <optgroup label="Europe">
-                <option value="paris">Paris Metro</option>
-                <option value="london">London Underground</option>
-                <option value="brussels">Brussels Metro</option>
-              </optgroup>
-            </select>
-          </td>
-          <td align="right">
-            <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
-          </td>
-          <td>
-            <label for="color-checkbox">Color lines</label>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            City:
-          </td>
-          <td>
-            <select id="map-selector" onchange="updateMap()">
-              <optgroup label="Asia">
-                <option value="Beijing, China">Beijing</option>
-                <option value="Seoul, South Korea">Seoul</option>
-                <option value="Shanghai, China">Shanghai</option>
-                <option value="Chiyoda, Tokyo, Japan" selected>Tokyo</option>
-              </optgroup>
-              <optgroup label="North America">
-                <option value="Chicago, IL">Chicago</option>
-                <option value="New York, NY">New York City</option>
-                <option value="San Francisco, CA">San Francisco</option>
-                <option value="Washington DC">Washington DC</option>
-              </optgroup>
-              <optgroup label="Europe">
-                <option value="Berlin, Germany">Berlin</option>
-                <option value="Brussels, Belgium">Brussels</option>
-                <option value="London, UK">London</option>
-                <option value="Madrid, Spain">Madrid</option>
-                <option value="Moscow, Russia">Moscow</option>
-                <option value="Paris, France">Paris</option>
-              </optgroup>
-            </select>
-          </td>
-          <td>
-            Zoom:
-          </td>
-          <td>
-            <input id="scale-slider" type="range" min="10" max="14" onchange="updateScale()" />
-          </td>
-        </tr>
-      </table>
-    </form>
+  <div id="map-and-canvas" class="column">
+    <img id="gmap" />
+
+    <canvas id="diagram">
+    </canvas>
   </div>
 
-  <canvas id="diagram" style="position: absolute">
-  </canvas>
+  <div id="aux-bar" class="column">
+    <div id="title">Subway Systems, Seen Elsewhere</div>
 
-  <img id="gmap" />
+    <div id="controls">
+      <form>
+        <div class="control-title">System</div>
+        <div class="control-surround">
+          <select id="system-selector" onchange="fetchDataAndUpdateDisplay(this)">
+            <optgroup label="Asia">
+              <option value="tokyo" selected>Tokyo Metro + Toei (Tokyo)</option>
+            </optgroup>
+            <optgroup label="North America">
+              <option value="newyork">New York City Subway</option>
+              <option value="chicago">Chicago 'L'</option>
+              <option value="washington">Washington DC Metro</option>
+              <option value="sfbart">BART (San Francisco Bay Area)</option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="paris">Paris Metro</option>
+              <option value="london">London Underground</option>
+              <option value="brussels">Brussels Metro</option>
+            </optgroup>
+          </select>
+        </div>
 
-  <p>
-    <small>
-      Data is
-      from <a href="http://www.openstreetmap.org">OpenStreetMap</a>. Look at
-      some <a href="notes.txt">notes</a>. Look at
-      some <a href="https://github.com/oyamauchi/subwaycomp">computer codes</a>.
-    </small>
-  </p>
-</div>
+        <div class="control-title">City</div>
+        <div class="control-surround">
+          <select id="map-selector" onchange="updateMap()">
+            <optgroup label="Asia">
+              <option value="Beijing, China">Beijing</option>
+              <option value="Seoul, South Korea">Seoul</option>
+              <option value="Shanghai, China">Shanghai</option>
+              <option value="Chiyoda, Tokyo, Japan" selected>Tokyo</option>
+            </optgroup>
+            <optgroup label="North America">
+              <option value="Chicago, IL">Chicago</option>
+              <option value="New York, NY">New York City</option>
+              <option value="San Francisco, CA">San Francisco</option>
+              <option value="Washington DC">Washington DC</option>
+            </optgroup>
+            <optgroup label="Europe">
+              <option value="Berlin, Germany">Berlin</option>
+              <option value="Brussels, Belgium">Brussels</option>
+              <option value="London, UK">London</option>
+              <option value="Madrid, Spain">Madrid</option>
+              <option value="Moscow, Russia">Moscow</option>
+              <option value="Paris, France">Paris</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="control-title">Zoom</div>
+        <div class="control-surround">
+          <input id="scale-slider" type="range" min="10" max="14" onchange="updateScale()" />
+        </div>
+
+        <div class="control-title control-surround">
+          <label>
+            <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
+            Color lines
+          </label>
+        </div>
+
+      </form>
+    </div>
+
+    <div id="aux-bar-buffer" style="min-height: 10px;"> </div>
+
+    <div id="links">
+      Map data &copy; <a href="http://www.openstreetmap.org">OpenStreetMap</a>
+      contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>.
+      <br /><br />
+      Look at some <a href="notes.txt">notes</a>.
+      <br />
+      Look at some <a href="https://github.com/oyamauchi/subwaycomp">computer codes</a>.
+    </div>
+
+  </div>
+
+</div><!-- column-container -->
 
 </body>
 <script type="text/javascript" src="draw.js"></script>
