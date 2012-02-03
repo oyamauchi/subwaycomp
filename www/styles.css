@@ -1,6 +1,6 @@
 
 body {
-    background-color: #ccc;
+    background-color: #bbb;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 
     margin: 0px;
@@ -15,25 +15,10 @@ a:hover {
     text-decoration: underline;
 }
 
-#column-container {
-    padding-left: 227px;
-}
-
-#column-container .column {
-    position: relative;
-    float: left;
-}
-
 #map-and-canvas {
-    background-color: #bbb;
-
     width: 100%;
     text-align: center;
-}
-
-#gmap {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 150px;
 }
 
 #diagram {
@@ -42,12 +27,18 @@ a:hover {
 
 #aux-bar {
     background-color: #ccc;
+    border-bottom: 1px solid #ddd;
 
-    padding-left: 7px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
 
-    margin-left: -100%;
-    right: 227px;
-    width: 220px;
+#controls {
+    position: relative;
+    left: 250px;
+    bottom: 0px;
+    padding-top: 10px;
 }
 
 #title {
@@ -56,39 +47,57 @@ a:hover {
     font-weight: bold;
     width: 220px;
 
-    padding: 3px 0 0 0;
+    float: left;
+    position: absolute;
+
+    padding: 12px 0 0 4px;
 }
 
-#controls {
-    padding-top: 10px;
-    padding-bottom: 10px;
+#links-trigger {
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    text-align: right;
+}
+
+.trigger #links {
+    display: none;
+}
+
+.trigger:hover #links {
+    display: block;
 }
 
 #links {
-    background-color: #bbb;
-    border-top: 1px solid #999;
-    border-left: 1px solid #999;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    margin-right: 7px;
-    padding: 3px 0 4px 3px;
+    padding: 3px 3px 4px 3px;
 
+    font-weight: normal;
     font-size: 12px;
 }
 
 .control-title {
+    float: left;
     font-weight: bold;
     color: #333333;
     text-shadow: #ddd 1px 1px 0;
-    padding-bottom: 4px;
+
+    position: relative;
+    padding-right: 3px;
+    margin-top: 4px;
+    margin-bottom: -4px;
 }
 
 .control-surround {
+    position: relative;
+    bottom: -1px;
+    float: left;
+
     background-color: #bbb;
     border-left: 1px solid #999;
     border-top: 1px solid #999;
-    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 
-    padding: 3px 0px 4px 3px;
-    margin-bottom: 1em;
+    padding: 3px 3px 4px 3px;
+    margin-right: 20px;
+    height: 23px;
 }

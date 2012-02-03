@@ -44,7 +44,7 @@ Chicago: Chicago Transit Authority
   All lines
   Relations: 92653 120717 122020 122552 124354 252441 443970 443974
   Colors are kind of wonky
-  Red/purple concurrency is iffy
+  Entire Red line subway is missing
 
 
 Washington: Washington Metropolitan Area Transit Authority, Washington Metro Area Transit Authority
