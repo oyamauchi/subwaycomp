@@ -33,18 +33,18 @@ London: Transport for London
 New York: (network tag) NYC Subway
   All lines (services, actually)
   Relations: 364630 366763 366764 366765 366766 366767 366768 366769 366770 366772 366773 366774 366775 366776 366777 366778 366779 366780 366781 366782 366783 366784 366785 366808 366809
-  Colors are a magical rainbow, not totally authentic
+  The colors are friggin'... what is that? The colors are wack.
   Lower Manhattan is busted; the lines don't join up
   2 and 3 train through Clark Street Tunnel totally missing
-  A, C, E missing a big chunk
-  Not fully spot-checked
+  M train is the wrong color (it's Nassau color; it should be 6 Av color)
+  Includes the 7 train extension to Penn -- lol
+  Not fully checked
 
 
 Chicago: Chicago Transit Authority
   All lines
   Relations: 92653 120717 122020 122552 124354 252441 443970 443974
   Colors are kind of wonky
-  Entire Red line subway is missing
 
 
 Washington: Washington Metropolitan Area Transit Authority, Washington Metro Area Transit Authority

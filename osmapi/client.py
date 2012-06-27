@@ -3,11 +3,11 @@ import hashlib
 import os
 import subprocess
 
-def send_query(query_string):
+def send_query(query_string, use_cache=True):
     hsh = hashlib.sha1(query_string).hexdigest()
     cachefile = os.path.join('.', 'datacache', hsh)
     cachefile = os.path.realpath(cachefile)
-    if os.path.exists(cachefile):
+    if use_cache and os.path.exists(cachefile):
         return open(cachefile).read()
 
     args = ['curl', '--data', '@-',
@@ -19,7 +19,7 @@ def send_query(query_string):
 
     result = curl.stdout.read()
 
-    if not os.path.exists(os.path.dirname(cachefile)):
+    if use_cache and not os.path.exists(os.path.dirname(cachefile)):
         os.mkdir(os.path.dirname(cachefile))
     open(cachefile, 'w').write(result)
 
