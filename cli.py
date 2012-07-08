@@ -34,10 +34,12 @@ elif sys.argv[1] == "nwbr":
     centerlat, centerlon = geo.center(structs)
     xmin, ymin, xmax, ymax = geo.mercatorize(structs)
     jsondump = json.dumps(structs, separators=(',',':'))
-    print """hereItIs(%s,
-%d, %d,
-%d, %d,
-%s, %s)""" % (jsondump, xmin, ymin, xmax, ymax, str(centerlat), str(centerlon))
+    print """{
+"obj" : %s,
+"xmin" : %d, "ymin" : %d,
+"xmax" : %d, "ymax" : %d
+}
+""" % (jsondump, xmin, ymin, xmax, ymax)
     exit(0)
 
 else:

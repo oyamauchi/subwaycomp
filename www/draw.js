@@ -48,12 +48,16 @@ function loaded() {
 }
 
 function fetchDataAndUpdateDisplay(selector) {
-    // Launch the request for the data. This is JSONP, purely because I'm a lazy
-    // bum and I want something that works locally too
-    var url = 'data/' + selector.value + '.js';
-    var fetcher = document.createElement('script');
-    fetcher.setAttribute('src', url);
-    document.getElementsByTagName('head')[0].appendChild(fetcher);
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'data/' + selector.value + '.js', true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE &&
+            xhr.status === 200) {
+            window.lastFetchedData = JSON.parse(xhr.responseText);
+            paint();
+        }
+    };
+    xhr.send();
 }
 
 function updateScale() {
@@ -62,16 +66,6 @@ function updateScale() {
 }
 
 function updateDisplay() {
-    paint();
-}
-
-// The JSONP callback for the choose-a-system selector
-function hereItIs(text, xmin, ymin, xmax, ymax, centerlat, centerlon) {
-    window.lastFetchedData = {'obj' : text,
-                              'xmin' : xmin,
-                              'ymin' : ymin,
-                              'xmax' : xmax,
-                              'ymax' : ymax};
     paint();
 }
 
