@@ -73,6 +73,5 @@ San Francisco: BART, San Francisco Municipal Railway
   SFO-Millbrae wye is missing (yellow to SFO, rest to Millbrae)
   Otherwise fine
 
-  Muni not loaded yet
-  Muni is missing L Taraval?
-  T Third doesn't have an operator. Look under nextbus:agency="sf-muni"
+  Muni has all lines except L Taraval
+  Colors are made-up
