@@ -58,7 +58,7 @@ function fetchDataAndUpdateDisplay(selector) {
         if (xhr.readyState === XMLHttpRequest.DONE &&
             xhr.status === 200) {
             window.lastFetchedData = JSON.parse(xhr.responseText);
-            paint();
+            repaint(true);
         }
     };
     xhr.send();
@@ -66,11 +66,11 @@ function fetchDataAndUpdateDisplay(selector) {
 
 function updateScale() {
     updateMap();
-    paint();
+    repaint(true);
 }
 
-function updateDisplay() {
-    paint();
+function updateOpacity() {
+    $('gmap').style.opacity = parseFloat($('opacity-slider').value) / 100;
 }
 
 function updateMap() {
@@ -81,7 +81,7 @@ function updateMap() {
     $('gmap').src = imgsrc;
 }
 
-function paint() {
+function repaint(repositionDiagram) {
     var context = $('diagram').getContext('2d');
 
     if (!window.lastFetchedData) {
@@ -102,8 +102,10 @@ function paint() {
     var yspan = ymax - ymin;
     context.canvas.width = zoomfactor * xspan;
     context.canvas.height = zoomfactor * yspan;
-    context.canvas.style.left = $('gmap').offsetLeft + 'px';
-    context.canvas.style.top = $('gmap').offsetTop + 'px';
+    if (repositionDiagram) {
+        context.canvas.style.left = $('gmap').offsetLeft + 'px';
+        context.canvas.style.top = $('gmap').offsetTop + 'px';
+    }
 
     // Functions to convert the meter-offset data into pixel coordinates
     var xconv = function (pt) { return (pt[0] - xmin) * zoomfactor; };

@@ -87,9 +87,14 @@
           <input id="scale-slider" type="range" min="10" max="14" onchange="updateScale()" />
         </div>
 
+        <div class="control-title">Map opacity</div>
+        <div class="control-surround">
+          <input id="opacity-slider" type="range" min="0" max="100" onchange="updateOpacity()" value="100" />
+        </div>
+
         <div class="control-surround">
           <label>
-            <input id="color-checkbox" type="checkbox" checked onchange="updateDisplay()" />
+            <input id="color-checkbox" type="checkbox" checked onchange="repaint(false)" />
             Color lines
           </label>
         </div>
