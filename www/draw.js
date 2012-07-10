@@ -48,8 +48,12 @@ function loaded() {
 }
 
 function fetchDataAndUpdateDisplay(selector) {
+    // Defeat browser cache when developing (i.e. tweaking data)
+    var bustcache =
+        (document.location.hostname == 'localhost' ? '?' + Math.random() : '');
+
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'data/' + selector.value + '.js', true);
+    xhr.open('GET', 'data/' + selector.value + '.js' + bustcache, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE &&
             xhr.status === 200) {

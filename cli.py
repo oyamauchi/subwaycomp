@@ -26,7 +26,9 @@ elif sys.argv[1] == "nwbr":
         relation = osmapi.graph.get_one_relation(result)
         if not relation.color:
             # If your system is lame and doesn't supply its own colors, you get
-            # magical rainbow colors
+            # magical rainbow colors. Seed with relation id to ensure consistent
+            # colors when regenerating data.
+            r.seed(relid)
             relation.color = "#%x" % r.randint(0x333333, 0xcccccc)
         relations.append(relation)
 

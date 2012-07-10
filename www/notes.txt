@@ -34,6 +34,7 @@ New York: (network tag) NYC Subway
   All lines (services, actually)
   Relations: 364630 366763 366764 366765 366766 366767 366768 366769 366770 366772 366773 366774 366775 366776 366777 366778 366779 366780 366781 366782 366783 366784 366785 366808 366809
   The colors are friggin'... what is that? The colors are wack.
+  All the shuttles have no color assigned
   Lower Manhattan is busted; the lines don't join up
   2 and 3 train through Clark Street Tunnel totally missing
   M train is the wrong color (it's Nassau color; it should be 6 Av color)
@@ -63,7 +64,6 @@ Seoul: appears to be completely missing?
 Brussels: STIB/MIVB
    All lines
    Relations: 58240 58241 58242 108101
-   No colors, so I made some up
    All okay, except for small gap at Simonis
 
 
