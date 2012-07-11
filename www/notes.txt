@@ -1,13 +1,11 @@
 
 Tokyo: Tokyo Metro, To-kyo- Metoro (hyphens are overbars), Toei
   Tokyo Metro has all lines except Tozai, Namboku, Fukutoshin
-  Relations: 443269 443272 443279 443281 443282 443284
   To-kyo- Metoro has Tozai
-  Relation: 443260
-  Namboku, Fukutoshin from MLIT-derived local data
-  Toei OSM data is generally iffy; using MLIT-derived local data instead
-  Hibiya line craps out early on the north end, between Minowa and Minami-Senju
-  Chiyoda line craps out early on the north end also (no Ayase, Kita-Ayase)
+  Hibiya, Chiyoda, Yurakucho from MLIT-derived local data
+  OSM data for those lines isn't terrible, but is missing pieces at the ends for no clear reason
+  Namboku, Fukutoshin from MLIT
+  Toei OSM data is generally iffy; using MLIT instead
 
 
 Paris: RATP

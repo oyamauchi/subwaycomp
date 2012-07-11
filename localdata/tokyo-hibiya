@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?><osm><node id="12358" lat="35.67155" lon="139.76464" />
+<node id="10" lat="35.6718" lon="139.76428" />
+<node id="11" lat="35.67205" lon="139.76391" />
+<node id="12" lat="35.67227" lon="139.76359" />
+<node id="12359" lat="35.67241" lon="139.76337" />
+<way id="12433">
+<nd ref="12358" />
+<nd ref="10" />
+<nd ref="11" />
+<nd ref="12" />
+<nd ref="12359" />
+</way>
+<node id="12360" lat="35.71099" lon="139.77663" />
+<node id="13" lat="35.71068" lon="139.77656" />
+<node id="14" lat="35.71051" lon="139.77653" />
+<node id="15" lat="35.70907" lon="139.7764" />
+<node id="16" lat="35.70763" lon="139.77627" />
+<node id="12361" lat="35.7074" lon="139.77626" />
+<way id="12434">
+<nd ref="12360" />
+<nd ref="13" />
+<nd ref="14" />
+<nd ref="15" />
+<nd ref="16" />
+<nd ref="12361" />
+</way>
+<node id="12362" lat="35.7299" lon="139.79182" />
+<node id="17" lat="35.73033" lon="139.79239" />
+<node id="18" lat="35.73035" lon="139.79242" />
+<node id="19" lat="35.73055" lon="139.79278" />
+<node id="20" lat="35.73066" lon="139.79326" />
+<node id="21" lat="35.73072" lon="139.79392" />
+<node id="22" lat="35.73057" lon="139.79541" />
+<node id="23" lat="35.73058" lon="139.79584" />
+<node id="24" lat="35.73067" lon="139.79644" />
+<node id="25" lat="35.73084" lon="139.79691" />
+<node id="26" lat="35.73113" lon="139.79753" />
+<node id="27" lat="35.73141" lon="139.79792" />
+<node id="28" lat="35.73171" lon="139.79828" />
+<node id="12363" lat="35.73174" lon="139.79832" />
+<way id="12435">
+<nd ref="12362" />
+<nd ref="17" />
+<nd ref="18" />
+<nd ref="19" />
+<nd ref="20" />
+<nd ref="21" />
+<nd ref="22" />
+<nd ref="23" />
+<nd ref="24" />
+<nd ref="25" />
+<nd ref="26" />
+<nd ref="27" />
+<nd ref="28" />
+<nd ref="12363" />
+</way>
+<node id="12361" lat="35.7074" lon="139.77626" />
+<node id="12364" lat="35.70591" lon="139.77612" />
+<way id="12436">
+<nd ref="12361" />
+<nd ref="12364" />
+</way>
+<node id="12365" lat="35.66731" lon="139.77169" />
+<node id="29" lat="35.66717" lon="139.77151" />
+<node id="30" lat="35.66704" lon="139.77123" />
+<node id="31" lat="35.66699" lon="139.77092" />
+<node id="32" lat="35.66701" lon="139.77047" />
+<node id="33" lat="35.66713" lon="139.77003" />
+<node id="34" lat="35.66737" lon="139.76968" />
+<node id="35" lat="35.66771" lon="139.76927" />
+<node id="36" lat="35.66814" lon="139.76876" />
+<node id="12366" lat="35.66849" lon="139.76836" />
+<way id="12437">
+<nd ref="12365" />
+<nd ref="29" />
+<nd ref="30" />
+<nd ref="31" />
+<nd ref="32" />
+<nd ref="33" />
+<nd ref="34" />
+<nd ref="35" />
+<nd ref="36" />
+<nd ref="12366" />
+</way>
+<node id="12367" lat="35.72131" lon="139.78504" />
+<node id="37" lat="35.72099" lon="139.7848" />
+<node id="38" lat="35.72057" lon="139.78448" />
+<node id="12368" lat="35.71983" lon="139.78388" />
+<way id="12438">
+<nd ref="12367" />
+<nd ref="37" />
+<nd ref="38" />
+<nd ref="12368" />
+</way>
+<node id="12369" lat="35.73288" lon="139.79924" />
+<node id="39" lat="35.73297" lon="139.79931" />
+<node id="40" lat="35.73396" lon="139.80001" />
+<node id="41" lat="35.73466" lon="139.80037" />
+<node id="42" lat="35.73568" lon="139.80083" />
+<node id="43" lat="35.7362" lon="139.80106" />
+<node id="44" lat="35.73679" lon="139.80127" />
+<node id="45" lat="35.73743" lon="139.80145" />
+<node id="46" lat="35.73859" lon="139.80166" />
+<node id="47" lat="35.73913" lon="139.80175" />
+<node id="48" lat="35.73936" lon="139.8018" />
+<node id="49" lat="35.74097" lon="139.80224" />
+<node id="50" lat="35.74112" lon="139.80229" />
+<node id="51" lat="35.74133" lon="139.80235" />
+<node id="52" lat="35.74314" lon="139.8029" />
+<node id="53" lat="35.74351" lon="139.80301" />
+<node id="54" lat="35.7436" lon="139.80303" />
+<node id="55" lat="35.74424" lon="139.80323" />
+<node id="56" lat="35.74434" lon="139.80326" />
+<node id="57" lat="35.74456" lon="139.80333" />
+<node id="58" lat="35.7447" lon="139.80338" />
+<node id="59" lat="35.74545" lon="139.80363" />
+<node id="60" lat="35.74563" lon="139.80371" />
+<node id="61" lat="35.7466" lon="139.80418" />
+<node id="62" lat="35.74763" lon="139.80481" />
+<node id="12370" lat="35.74797" lon="139.80499" />
+<way id="12439">
+<nd ref="12369" />
+<nd ref="39" />
+<nd ref="40" />
+<nd ref="41" />
+<nd ref="42" />
+<nd ref="43" />
+<nd ref="44" />
+<nd ref="45" />
+<nd ref="46" />
+<nd ref="47" />
+<nd ref="48" />
+<nd ref="49" />
+<nd ref="50" />
+<nd ref="51" />
+<nd ref="52" />
+<nd ref="53" />
+<nd ref="54" />
+<nd ref="55" />
+<nd ref="56" />
+<nd ref="57" />
+<nd ref="58" />
+<nd ref="59" />
+<nd ref="60" />
+<nd ref="61" />
+<nd ref="62" />
+<nd ref="12370" />
+</way>
+<node id="12371" lat="35.72867" lon="139.79051" />
+<node id="63" lat="35.72841" lon="139.79024" />
+<node id="64" lat="35.72762" lon="139.78968" />
+<node id="65" lat="35.72719" lon="139.78938" />
+<node id="66" lat="35.72663" lon="139.789" />
+<node id="67" lat="35.72585" lon="139.78847" />
+<node id="68" lat="35.7258" lon="139.78843" />
+<node id="69" lat="35.72512" lon="139.78794" />
+<node id="70" lat="35.72504" lon="139.78789" />
+<node id="71" lat="35.72464" lon="139.7876" />
+<node id="72" lat="35.72456" lon="139.78755" />
+<node id="73" lat="35.72402" lon="139.78716" />
+<node id="74" lat="35.72336" lon="139.78665" />
+<node id="75" lat="35.7227" lon="139.78614" />
+<node id="76" lat="35.72261" lon="139.78607" />
+<node id="77" lat="35.72233" lon="139.78585" />
+<node id="78" lat="35.72208" lon="139.78566" />
+<node id="79" lat="35.72138" lon="139.7851" />
+<node id="12367" lat="35.72131" lon="139.78504" />
+<way id="12440">
+<nd ref="12371" />
+<nd ref="63" />
+<nd ref="64" />
+<nd ref="65" />
+<nd ref="66" />
+<nd ref="67" />
+<nd ref="68" />
+<nd ref="69" />
+<nd ref="70" />
+<nd ref="71" />
+<nd ref="72" />
+<nd ref="73" />
+<nd ref="74" />
+<nd ref="75" />
+<nd ref="76" />
+<nd ref="77" />
+<nd ref="78" />
+<nd ref="79" />
+<nd ref="12367" />
+</way>
+<node id="12372" lat="35.66977" lon="139.76691" />
+<node id="80" lat="35.66968" lon="139.76701" />
+<node id="81" lat="35.66959" lon="139.7671" />
+<node id="82" lat="35.66948" lon="139.76723" />
+<node id="83" lat="35.66893" lon="139.76786" />
+<node id="12366" lat="35.66849" lon="139.76836" />
+<way id="12441">
+<nd ref="12372" />
+<nd ref="80" />
+<nd ref="81" />
+<nd ref="82" />
+<nd ref="83" />
+<nd ref="12366" />
+</way>
+<node id="12369" lat="35.73288" lon="139.79924" />
+<node id="12363" lat="35.73174" lon="139.79832" />
+<way id="12442">
+<nd ref="12369" />
+<nd ref="12363" />
+</way>
+<node id="12373" lat="35.6869" lon="139.78179" />
+<node id="84" lat="35.68595" lon="139.7826" />
+<node id="85" lat="35.68584" lon="139.7827" />
+<node id="12374" lat="35.68562" lon="139.78289" />
+<way id="12443">
+<nd ref="12373" />
+<nd ref="84" />
+<nd ref="85" />
+<nd ref="12374" />
+</way>
+<node id="12375" lat="35.71199" lon="139.77764" />
+<node id="86" lat="35.71165" lon="139.77707" />
+<node id="87" lat="35.71146" lon="139.77687" />
+<node id="88" lat="35.71122" lon="139.77672" />
+<node id="12360" lat="35.71099" lon="139.77663" />
+<way id="12444">
+<nd ref="12375" />
+<nd ref="86" />
+<nd ref="87" />
+<nd ref="88" />
+<nd ref="12360" />
+</way>
+<node id="12362" lat="35.7299" lon="139.79182" />
+<node id="12371" lat="35.72867" lon="139.79051" />
+<way id="12445">
+<nd ref="12362" />
+<nd ref="12371" />
+</way>
+<node id="12376" lat="35.67976" lon="139.78005" />
+<node id="89" lat="35.67951" lon="139.77989" />
+<node id="90" lat="35.6789" lon="139.7795" />
+<node id="12377" lat="35.67839" lon="139.7792" />
+<way id="12446">
+<nd ref="12376" />
+<nd ref="89" />
+<nd ref="90" />
+<nd ref="12377" />
+</way>
+<node id="12377" lat="35.67839" lon="139.7792" />
+<node id="91" lat="35.67818" lon="139.77907" />
+<node id="92" lat="35.67726" lon="139.77849" />
+<node id="93" lat="35.67676" lon="139.77818" />
+<node id="94" lat="35.67665" lon="139.77811" />
+<node id="12378" lat="35.67606" lon="139.77775" />
+<way id="12447">
+<nd ref="12377" />
+<nd ref="91" />
+<nd ref="92" />
+<nd ref="93" />
+<nd ref="94" />
+<nd ref="12378" />
+</way>
+<node id="12379" lat="35.69112" lon="139.77817" />
+<node id="95" lat="35.69152" lon="139.77778" />
+<node id="96" lat="35.69174" lon="139.77762" />
+<node id="97" lat="35.69208" lon="139.77738" />
+<node id="98" lat="35.69258" lon="139.7771" />
+<node id="99" lat="35.69308" lon="139.77689" />
+<node id="100" lat="35.69351" lon="139.77675" />
+<node id="101" lat="35.69456" lon="139.77632" />
+<node id="102" lat="35.69552" lon="139.776" />
+<node id="103" lat="35.69604" lon="139.77579" />
+<node id="104" lat="35.69638" lon="139.77565" />
+<node id="105" lat="35.69654" lon="139.77558" />
+<node id="106" lat="35.69673" lon="139.77547" />
+<node id="12380" lat="35.69719" lon="139.7755" />
+<way id="12448">
+<nd ref="12379" />
+<nd ref="95" />
+<nd ref="96" />
+<nd ref="97" />
+<nd ref="98" />
+<nd ref="99" />
+<nd ref="100" />
+<nd ref="101" />
+<nd ref="102" />
+<nd ref="103" />
+<nd ref="104" />
+<nd ref="105" />
+<nd ref="106" />
+<nd ref="12380" />
+</way>
+<node id="12379" lat="35.69112" lon="139.77817" />
+<node id="107" lat="35.69076" lon="139.77847" />
+<node id="108" lat="35.69028" lon="139.77888" />
+<node id="109" lat="35.68993" lon="139.77917" />
+<node id="12381" lat="35.68973" lon="139.77935" />
+<way id="12449">
+<nd ref="12379" />
+<nd ref="107" />
+<nd ref="108" />
+<nd ref="109" />
+<nd ref="12381" />
+</way>
+<node id="12381" lat="35.68973" lon="139.77935" />
+<node id="110" lat="35.68956" lon="139.77949" />
+<node id="111" lat="35.68907" lon="139.77992" />
+<node id="112" lat="35.68829" lon="139.78057" />
+<node id="113" lat="35.68796" lon="139.78086" />
+<node id="114" lat="35.68729" lon="139.78144" />
+<node id="115" lat="35.68695" lon="139.78174" />
+<node id="12373" lat="35.6869" lon="139.78179" />
+<way id="12450">
+<nd ref="12381" />
+<nd ref="110" />
+<nd ref="111" />
+<nd ref="112" />
+<nd ref="113" />
+<nd ref="114" />
+<nd ref="115" />
+<nd ref="12373" />
+</way>
+<node id="12364" lat="35.70591" lon="139.77612" />
+<node id="116" lat="35.70299" lon="139.77582" />
+<node id="117" lat="35.70099" lon="139.77562" />
+<node id="118" lat="35.7003" lon="139.77556" />
+<node id="119" lat="35.69997" lon="139.77554" />
+<node id="120" lat="35.69938" lon="139.77555" />
+<node id="12382" lat="35.69874" lon="139.77555" />
+<way id="12451">
+<nd ref="12364" />
+<nd ref="116" />
+<nd ref="117" />
+<nd ref="118" />
+<nd ref="119" />
+<nd ref="120" />
+<nd ref="12382" />
+</way>
+<node id="12380" lat="35.69719" lon="139.7755" />
+<node id="121" lat="35.69786" lon="139.77553" />
+<node id="12382" lat="35.69874" lon="139.77555" />
+<way id="12452">
+<nd ref="12380" />
+<nd ref="121" />
+<nd ref="12382" />
+</way>
+<node id="12374" lat="35.68562" lon="139.78289" />
+<node id="122" lat="35.6852" lon="139.78316" />
+<node id="123" lat="35.68473" lon="139.78318" />
+<node id="124" lat="35.68439" lon="139.78311" />
+<node id="125" lat="35.68386" lon="139.7829" />
+<node id="126" lat="35.6834" lon="139.7825" />
+<node id="127" lat="35.68256" lon="139.78177" />
+<node id="128" lat="35.6825" lon="139.7817" />
+<node id="129" lat="35.68169" lon="139.78122" />
+<node id="130" lat="35.68138" lon="139.78103" />
+<node id="131" lat="35.68085" lon="139.78072" />
+<node id="132" lat="35.68079" lon="139.78069" />
+<node id="133" lat="35.68072" lon="139.78064" />
+<node id="134" lat="35.6803" lon="139.78038" />
+<node id="135" lat="35.67999" lon="139.7802" />
+<node id="12376" lat="35.67976" lon="139.78005" />
+<way id="12453">
+<nd ref="12374" />
+<nd ref="122" />
+<nd ref="123" />
+<nd ref="124" />
+<nd ref="125" />
+<nd ref="126" />
+<nd ref="127" />
+<nd ref="128" />
+<nd ref="129" />
+<nd ref="130" />
+<nd ref="131" />
+<nd ref="132" />
+<nd ref="133" />
+<nd ref="134" />
+<nd ref="135" />
+<nd ref="12376" />
+</way>
+<node id="12383" lat="35.67467" lon="139.77693" />
+<node id="136" lat="35.67462" lon="139.7769" />
+<node id="137" lat="35.67412" lon="139.77669" />
+<node id="138" lat="35.67331" lon="139.77637" />
+<node id="139" lat="35.67298" lon="139.77623" />
+<node id="140" lat="35.6726" lon="139.77608" />
+<node id="141" lat="35.67208" lon="139.77586" />
+<node id="142" lat="35.67198" lon="139.77581" />
+<node id="143" lat="35.67142" lon="139.77558" />
+<node id="144" lat="35.67088" lon="139.77537" />
+<node id="145" lat="35.67026" lon="139.77512" />
+<node id="146" lat="35.6702" lon="139.77508" />
+<node id="147" lat="35.67002" lon="139.77486" />
+<node id="148" lat="35.66991" lon="139.77473" />
+<node id="149" lat="35.66979" lon="139.77463" />
+<node id="150" lat="35.66937" lon="139.77422" />
+<node id="151" lat="35.66931" lon="139.77417" />
+<node id="152" lat="35.66895" lon="139.7738" />
+<node id="153" lat="35.6689" lon="139.77375" />
+<node id="12384" lat="35.66854" lon="139.77326" />
+<way id="12454">
+<nd ref="12383" />
+<nd ref="136" />
+<nd ref="137" />
+<nd ref="138" />
+<nd ref="139" />
+<nd ref="140" />
+<nd ref="141" />
+<nd ref="142" />
+<nd ref="143" />
+<nd ref="144" />
+<nd ref="145" />
+<nd ref="146" />
+<nd ref="147" />
+<nd ref="148" />
+<nd ref="149" />
+<nd ref="150" />
+<nd ref="151" />
+<nd ref="152" />
+<nd ref="153" />
+<nd ref="12384" />
+</way>
+<node id="12378" lat="35.67606" lon="139.77775" />
+<node id="154" lat="35.67601" lon="139.77772" />
+<node id="155" lat="35.67549" lon="139.7774" />
+<node id="156" lat="35.67532" lon="139.7773" />
+<node id="12383" lat="35.67467" lon="139.77693" />
+<way id="12455">
+<nd ref="12378" />
+<nd ref="154" />
+<nd ref="155" />
+<nd ref="156" />
+<nd ref="12383" />
+</way>
+<node id="12358" lat="35.67155" lon="139.76464" />
+<node id="157" lat="35.67124" lon="139.7651" />
+<node id="158" lat="35.67084" lon="139.76562" />
+<node id="159" lat="35.67045" lon="139.76611" />
+<node id="160" lat="35.67023" lon="139.76638" />
+<node id="161" lat="35.67002" lon="139.76666" />
+<node id="162" lat="35.66991" lon="139.76679" />
+<node id="12372" lat="35.66977" lon="139.76691" />
+<way id="12456">
+<nd ref="12358" />
+<nd ref="157" />
+<nd ref="158" />
+<nd ref="159" />
+<nd ref="160" />
+<nd ref="161" />
+<nd ref="162" />
+<nd ref="12372" />
+</way>
+<node id="12384" lat="35.66854" lon="139.77326" />
+<node id="163" lat="35.66846" lon="139.77316" />
+<node id="164" lat="35.66809" lon="139.77268" />
+<node id="165" lat="35.66788" lon="139.77241" />
+<node id="166" lat="35.66763" lon="139.77209" />
+<node id="12365" lat="35.66731" lon="139.77169" />
+<way id="12457">
+<nd ref="12384" />
+<nd ref="163" />
+<nd ref="164" />
+<nd ref="165" />
+<nd ref="166" />
+<nd ref="12365" />
+</way>
+<node id="12375" lat="35.71199" lon="139.77764" />
+<node id="167" lat="35.71215" lon="139.7779" />
+<node id="168" lat="35.71228" lon="139.77811" />
+<node id="169" lat="35.71248" lon="139.77834" />
+<node id="170" lat="35.7135" lon="139.77903" />
+<node id="171" lat="35.71451" lon="139.77974" />
+<node id="172" lat="35.71515" lon="139.78024" />
+<node id="173" lat="35.71748" lon="139.78206" />
+<node id="174" lat="35.71909" lon="139.78332" />
+<node id="12368" lat="35.71983" lon="139.78388" />
+<way id="12458">
+<nd ref="12375" />
+<nd ref="167" />
+<nd ref="168" />
+<nd ref="169" />
+<nd ref="170" />
+<nd ref="171" />
+<nd ref="172" />
+<nd ref="173" />
+<nd ref="174" />
+<nd ref="12368" />
+</way>
+<node id="12370" lat="35.74797" lon="139.80499" />
+<node id="175" lat="35.74849" lon="139.80516" />
+<node id="12385" lat="35.74855" lon="139.80518" />
+<way id="12459">
+<nd ref="12370" />
+<nd ref="175" />
+<nd ref="12385" />
+</way>
+<node id="12385" lat="35.74855" lon="139.80518" />
+<node id="176" lat="35.7489" lon="139.80529" />
+<node id="177" lat="35.75053" lon="139.80578" />
+<node id="12386" lat="35.75126" lon="139.806" />
+<way id="12460">
+<nd ref="12385" />
+<nd ref="176" />
+<nd ref="177" />
+<nd ref="12386" />
+</way>
+<node id="12387" lat="35.66325" lon="139.73206" />
+<node id="178" lat="35.66319" lon="139.73232" />
+<node id="179" lat="35.66304" lon="139.73262" />
+<node id="180" lat="35.66253" lon="139.73366" />
+<node id="181" lat="35.66237" lon="139.73398" />
+<node id="182" lat="35.66216" lon="139.73452" />
+<node id="183" lat="35.66116" lon="139.73783" />
+<node id="184" lat="35.66061" lon="139.73933" />
+<node id="185" lat="35.65994" lon="139.74103" />
+<node id="186" lat="35.65977" lon="139.74146" />
+<node id="187" lat="35.65976" lon="139.74157" />
+<node id="188" lat="35.65979" lon="139.74186" />
+<node id="189" lat="35.65986" lon="139.7421" />
+<node id="190" lat="35.66003" lon="139.74245" />
+<node id="191" lat="35.66024" lon="139.7428" />
+<node id="192" lat="35.66048" lon="139.74305" />
+<node id="193" lat="35.66085" lon="139.74329" />
+<node id="194" lat="35.66103" lon="139.7434" />
+<node id="195" lat="35.66128" lon="139.74358" />
+<node id="196" lat="35.66185" lon="139.74401" />
+<node id="12388" lat="35.66206" lon="139.74419" />
+<way id="12461">
+<nd ref="12387" />
+<nd ref="178" />
+<nd ref="179" />
+<nd ref="180" />
+<nd ref="181" />
+<nd ref="182" />
+<nd ref="183" />
+<nd ref="184" />
+<nd ref="185" />
+<nd ref="186" />
+<nd ref="187" />
+<nd ref="188" />
+<nd ref="189" />
+<nd ref="190" />
+<nd ref="191" />
+<nd ref="192" />
+<nd ref="193" />
+<nd ref="194" />
+<nd ref="195" />
+<nd ref="196" />
+<nd ref="12388" />
+</way>
+<node id="12389" lat="35.67452" lon="139.75144" />
+<node id="12390" lat="35.67323" lon="139.75068" />
+<way id="12462">
+<nd ref="12389" />
+<nd ref="12390" />
+</way>
+<node id="12391" lat="35.66319" lon="139.74526" />
+<node id="197" lat="35.66395" lon="139.74602" />
+<node id="198" lat="35.66438" lon="139.74636" />
+<node id="199" lat="35.66503" lon="139.74677" />
+<node id="200" lat="35.66539" lon="139.7469" />
+<node id="201" lat="35.66681" lon="139.74755" />
+<node id="202" lat="35.66771" lon="139.74794" />
+<node id="203" lat="35.66785" lon="139.748" />
+<node id="204" lat="35.66887" lon="139.74848" />
+<node id="205" lat="35.66963" lon="139.74895" />
+<node id="206" lat="35.66991" lon="139.74912" />
+<node id="207" lat="35.67043" lon="139.74936" />
+<node id="208" lat="35.67083" lon="139.74952" />
+<node id="209" lat="35.67113" lon="139.74965" />
+<node id="210" lat="35.67143" lon="139.74978" />
+<node id="211" lat="35.67165" lon="139.74987" />
+<node id="212" lat="35.67278" lon="139.75039" />
+<node id="213" lat="35.67304" lon="139.75055" />
+<node id="12390" lat="35.67323" lon="139.75068" />
+<way id="12463">
+<nd ref="12391" />
+<nd ref="197" />
+<nd ref="198" />
+<nd ref="199" />
+<nd ref="200" />
+<nd ref="201" />
+<nd ref="202" />
+<nd ref="203" />
+<nd ref="204" />
+<nd ref="205" />
+<nd ref="206" />
+<nd ref="207" />
+<nd ref="208" />
+<nd ref="209" />
+<nd ref="210" />
+<nd ref="211" />
+<nd ref="212" />
+<nd ref="213" />
+<nd ref="12390" />
+</way>
+<node id="12359" lat="35.67241" lon="139.76337" />
+<node id="214" lat="35.67242" lon="139.76335" />
+<node id="215" lat="35.67254" lon="139.76318" />
+<node id="216" lat="35.67278" lon="139.76281" />
+<node id="217" lat="35.67301" lon="139.76246" />
+<node id="218" lat="35.67345" lon="139.7618" />
+<node id="12392" lat="35.67378" lon="139.76131" />
+<way id="12464">
+<nd ref="12359" />
+<nd ref="214" />
+<nd ref="215" />
+<nd ref="216" />
+<nd ref="217" />
+<nd ref="218" />
+<nd ref="12392" />
+</way>
+<node id="12388" lat="35.66206" lon="139.74419" />
+<node id="12391" lat="35.66319" lon="139.74526" />
+<way id="12465">
+<nd ref="12388" />
+<nd ref="12391" />
+</way>
+<node id="12389" lat="35.67452" lon="139.75144" />
+<node id="219" lat="35.67471" lon="139.75155" />
+<node id="220" lat="35.67637" lon="139.7526" />
+<node id="221" lat="35.67677" lon="139.75306" />
+<node id="222" lat="35.67704" lon="139.75344" />
+<node id="223" lat="35.67725" lon="139.75411" />
+<node id="224" lat="35.67731" lon="139.7546" />
+<node id="225" lat="35.67686" lon="139.75564" />
+<node id="226" lat="35.67676" lon="139.75589" />
+<node id="227" lat="35.67668" lon="139.7561" />
+<node id="228" lat="35.67609" lon="139.7575" />
+<node id="229" lat="35.67584" lon="139.75799" />
+<node id="230" lat="35.67546" lon="139.75895" />
+<node id="231" lat="35.67519" lon="139.75936" />
+<node id="232" lat="35.67502" lon="139.75952" />
+<node id="233" lat="35.67489" lon="139.7597" />
+<node id="12393" lat="35.67476" lon="139.75989" />
+<way id="12466">
+<nd ref="12389" />
+<nd ref="219" />
+<nd ref="220" />
+<nd ref="221" />
+<nd ref="222" />
+<nd ref="223" />
+<nd ref="224" />
+<nd ref="225" />
+<nd ref="226" />
+<nd ref="227" />
+<nd ref="228" />
+<nd ref="229" />
+<nd ref="230" />
+<nd ref="231" />
+<nd ref="232" />
+<nd ref="233" />
+<nd ref="12393" />
+</way>
+<node id="12394" lat="35.66235" lon="139.73025" />
+<node id="12387" lat="35.66325" lon="139.73206" />
+<way id="12467">
+<nd ref="12394" />
+<nd ref="12387" />
+</way>
+<node id="12393" lat="35.67476" lon="139.75989" />
+<node id="234" lat="35.67419" lon="139.76072" />
+<node id="235" lat="35.6741" lon="139.76085" />
+<node id="12392" lat="35.67378" lon="139.76131" />
+<way id="12468">
+<nd ref="12393" />
+<nd ref="234" />
+<nd ref="235" />
+<nd ref="12392" />
+</way>
+<node id="12292" lat="35.64352" lon="139.69815" />
+<node id="236" lat="35.64414" lon="139.69886" />
+<node id="237" lat="35.6444" lon="139.69918" />
+<node id="12293" lat="35.64469" lon="139.69952" />
+<way id="12365">
+<nd ref="12292" />
+<nd ref="236" />
+<nd ref="237" />
+<nd ref="12293" />
+</way>
+<node id="12395" lat="35.64646" lon="139.70808" />
+<node id="238" lat="35.6466" lon="139.70828" />
+<node id="239" lat="35.6469" lon="139.70864" />
+<node id="12396" lat="35.6477" lon="139.70924" />
+<way id="12469">
+<nd ref="12395" />
+<nd ref="238" />
+<nd ref="239" />
+<nd ref="12396" />
+</way>
+<node id="12287" lat="35.64561" lon="139.70064" />
+<node id="240" lat="35.64568" lon="139.70088" />
+<node id="241" lat="35.64648" lon="139.70202" />
+<node id="242" lat="35.64653" lon="139.70209" />
+<node id="243" lat="35.64665" lon="139.70261" />
+<node id="244" lat="35.64652" lon="139.70312" />
+<node id="245" lat="35.64641" lon="139.70436" />
+<node id="246" lat="35.6463" lon="139.70531" />
+<node id="247" lat="35.64618" lon="139.70634" />
+<node id="248" lat="35.64617" lon="139.7069" />
+<node id="249" lat="35.64617" lon="139.70732" />
+<node id="250" lat="35.64629" lon="139.70773" />
+<node id="12395" lat="35.64646" lon="139.70808" />
+<way id="12470">
+<nd ref="12287" />
+<nd ref="240" />
+<nd ref="241" />
+<nd ref="242" />
+<nd ref="243" />
+<nd ref="244" />
+<nd ref="245" />
+<nd ref="246" />
+<nd ref="247" />
+<nd ref="248" />
+<nd ref="249" />
+<nd ref="250" />
+<nd ref="12395" />
+</way>
+<node id="12287" lat="35.64561" lon="139.70064" />
+<node id="251" lat="35.64541" lon="139.70041" />
+<node id="252" lat="35.64474" lon="139.69958" />
+<node id="12293" lat="35.64469" lon="139.69952" />
+<way id="12406">
+<nd ref="12287" />
+<nd ref="251" />
+<nd ref="252" />
+<nd ref="12293" />
+</way>
+<node id="12397" lat="35.6524" lon="139.72216" />
+<node id="253" lat="35.65304" lon="139.72223" />
+<node id="254" lat="35.65375" lon="139.72241" />
+<node id="255" lat="35.65485" lon="139.72299" />
+<node id="256" lat="35.65589" lon="139.72362" />
+<node id="257" lat="35.65656" lon="139.72384" />
+<node id="258" lat="35.65659" lon="139.72385" />
+<node id="259" lat="35.65718" lon="139.72388" />
+<node id="260" lat="35.65819" lon="139.72373" />
+<node id="261" lat="35.65901" lon="139.72358" />
+<node id="262" lat="35.6594" lon="139.72369" />
+<node id="263" lat="35.65982" lon="139.72416" />
+<node id="264" lat="35.65999" lon="139.72452" />
+<node id="265" lat="35.66031" lon="139.72545" />
+<node id="266" lat="35.66096" lon="139.72726" />
+<node id="267" lat="35.66121" lon="139.72791" />
+<node id="12394" lat="35.66235" lon="139.73025" />
+<way id="12471">
+<nd ref="12397" />
+<nd ref="253" />
+<nd ref="254" />
+<nd ref="255" />
+<nd ref="256" />
+<nd ref="257" />
+<nd ref="258" />
+<nd ref="259" />
+<nd ref="260" />
+<nd ref="261" />
+<nd ref="262" />
+<nd ref="263" />
+<nd ref="264" />
+<nd ref="265" />
+<nd ref="266" />
+<nd ref="267" />
+<nd ref="12394" />
+</way>
+<node id="12398" lat="35.6506" lon="139.72226" />
+<node id="268" lat="35.65235" lon="139.72216" />
+<node id="12397" lat="35.6524" lon="139.72216" />
+<way id="12472">
+<nd ref="12398" />
+<nd ref="268" />
+<nd ref="12397" />
+</way>
+<node id="12396" lat="35.6477" lon="139.70924" />
+<node id="269" lat="35.64774" lon="139.70929" />
+<node id="270" lat="35.64796" lon="139.70958" />
+<node id="271" lat="35.64833" lon="139.71026" />
+<node id="272" lat="35.6488" lon="139.71103" />
+<node id="273" lat="35.64883" lon="139.7113" />
+<node id="274" lat="35.64859" lon="139.71215" />
+<node id="275" lat="35.64857" lon="139.71223" />
+<node id="276" lat="35.64838" lon="139.71384" />
+<node id="277" lat="35.64838" lon="139.71508" />
+<node id="278" lat="35.64877" lon="139.71767" />
+<node id="279" lat="35.64894" lon="139.7188" />
+<node id="280" lat="35.64903" lon="139.71931" />
+<node id="281" lat="35.64927" lon="139.72071" />
+<node id="282" lat="35.64956" lon="139.72143" />
+<node id="283" lat="35.64997" lon="139.722" />
+<node id="284" lat="35.65019" lon="139.72216" />
+<node id="12398" lat="35.6506" lon="139.72226" />
+<way id="12473">
+<nd ref="12396" />
+<nd ref="269" />
+<nd ref="270" />
+<nd ref="271" />
+<nd ref="272" />
+<nd ref="273" />
+<nd ref="274" />
+<nd ref="275" />
+<nd ref="276" />
+<nd ref="277" />
+<nd ref="278" />
+<nd ref="279" />
+<nd ref="280" />
+<nd ref="281" />
+<nd ref="282" />
+<nd ref="283" />
+<nd ref="284" />
+<nd ref="12398" />
+</way>
+<relation id="201">
+<member type="way" ref="12433" role=""/>
+<member type="way" ref="12434" role=""/>
+<member type="way" ref="12435" role=""/>
+<member type="way" ref="12436" role=""/>
+<member type="way" ref="12437" role=""/>
+<member type="way" ref="12438" role=""/>
+<member type="way" ref="12439" role=""/>
+<member type="way" ref="12440" role=""/>
+<member type="way" ref="12441" role=""/>
+<member type="way" ref="12442" role=""/>
+<member type="way" ref="12443" role=""/>
+<member type="way" ref="12444" role=""/>
+<member type="way" ref="12445" role=""/>
+<member type="way" ref="12446" role=""/>
+<member type="way" ref="12447" role=""/>
+<member type="way" ref="12448" role=""/>
+<member type="way" ref="12449" role=""/>
+<member type="way" ref="12450" role=""/>
+<member type="way" ref="12451" role=""/>
+<member type="way" ref="12452" role=""/>
+<member type="way" ref="12453" role=""/>
+<member type="way" ref="12454" role=""/>
+<member type="way" ref="12455" role=""/>
+<member type="way" ref="12456" role=""/>
+<member type="way" ref="12457" role=""/>
+<member type="way" ref="12458" role=""/>
+<member type="way" ref="12459" role=""/>
+<member type="way" ref="12460" role=""/>
+<member type="way" ref="12461" role=""/>
+<member type="way" ref="12462" role=""/>
+<member type="way" ref="12463" role=""/>
+<member type="way" ref="12464" role=""/>
+<member type="way" ref="12465" role=""/>
+<member type="way" ref="12466" role=""/>
+<member type="way" ref="12467" role=""/>
+<member type="way" ref="12468" role=""/>
+<member type="way" ref="12365" role=""/>
+<member type="way" ref="12469" role=""/>
+<member type="way" ref="12470" role=""/>
+<member type="way" ref="12406" role=""/>
+<member type="way" ref="12471" role=""/>
+<member type="way" ref="12472" role=""/>
+<member type="way" ref="12473" role=""/>
+<tag k="color" v="#8BA2AE"/>
+</relation>
+</osm>
