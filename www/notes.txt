@@ -4,13 +4,10 @@ Tokyo: Tokyo Metro, To-kyo- Metoro (hyphens are overbars), Toei
   Relations: 443269 443272 443279 443281 443282 443284
   To-kyo- Metoro has Tozai
   Relation: 443260
-  Toei is missing Asakusa (?!?!), Oedo
-  Relations: 443259 443286
-  Colors are meh
-  Shinjuku line is total baloney: an isolated bit off to the east, nothing through center
+  Namboku, Fukutoshin from MLIT-derived local data
+  Toei OSM data is generally iffy; using MLIT-derived local data instead
   Hibiya line craps out early on the north end, between Minowa and Minami-Senju
-  Random chunk of Mita line on top of Marunouchi around Otemachi
-  Mita line craps out early on north (should go farther north than Yurakucho line). Between Itabashi-Honcho and Itabashi-Kuyakushomae, it seems
+  Chiyoda line craps out early on the north end also (no Ayase, Kita-Ayase)
 
 
 Paris: RATP
