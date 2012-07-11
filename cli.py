@@ -21,9 +21,16 @@ elif sys.argv[1] == "nwbr":
     relations = []
     r = random.Random()
     for relid in sys.argv[2:]:
-        query = osmapi.queries.nodes_and_ways_by_relation(relid)
-        result = osmapi.client.send_query(query)
+        if relid[0] == 'L':
+            # Read it from local data
+            result = open('localdata/' + relid[1:]).read()
+        else:
+            # Read it from the OSM API
+            query = osmapi.queries.nodes_and_ways_by_relation(relid)
+            result = osmapi.client.send_query(query)
+        assert result
         relation = osmapi.graph.get_one_relation(result)
+
         if not relation.color:
             # If your system is lame and doesn't supply its own colors, you get
             # magical rainbow colors. Seed with relation id to ensure consistent
@@ -33,7 +40,6 @@ elif sys.argv[1] == "nwbr":
         relations.append(relation)
 
     structs = [rel.jsonable_form() for rel in relations]
-    centerlat, centerlon = geo.center(structs)
     xmin, ymin, xmax, ymax = geo.mercatorize(structs)
     jsondump = json.dumps(structs, separators=(',',':'))
     print """{
