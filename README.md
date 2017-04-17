@@ -1,10 +1,14 @@
 
+# subwaycomp
+
 This is a webpage that shows diagrams of subway systems, to scale.
 
 I use it to satisfy my nerdly desires to intuitively understand the relative
 sizes and densities of different systems.
 
 Eventually I might add things to it, such as features.
+
+## Structure
 
 There are two main parts: one in Python that fetches data from OpenStreetMap,
 performs trigonometry thereupon and writes it into files, and another in
