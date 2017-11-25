@@ -10,9 +10,13 @@ There are two main parts: one in Python that fetches data from OpenStreetMap,
 performs trigonometry thereupon and writes it into files, and another in
 Javascript that actually draws the map.
 
-There is no server-side scripting involved here. The data fetching/processing is
-done offline, and all the JS does is fetch a static file and draw stuff. You can
-use it as a local file in your browser.
+There is no server-side scripting involved here. The data
+fetching/processing is done offline, and all the JS does is fetch a
+static file and draw stuff. You can use it as a local file in your
+browser.
+
+The docs directory is not documentation for the project; it's the web
+frontend. I name it docs so I can use Github Pages to host it.
 
 There are some notes in a file called notes.txt, wherein I complain about data
 quality in hilarious fashion.
